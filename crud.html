@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class=" text-center">
+                <h1>CRUD</h1>
+                <h3>Book Mangment system</h3>
+            </div>
+            <div class="row">
+                <input type="text" class="col-12   inp marbottom" placeholder="Title"  id="title">
+                <input type="text" class="col-12   inp marbottom " placeholder="Author name" id="category">
+            </div>
+            <div class="row marbottom ">
+                <input type="number" class="col-3  inp" placeholder="price" id="price" onkeyup="get()">
+                <div class="col-1"></div>
+                <input type="number" class="col-3   inp" placeholder="Tax" id="tax" onkeyup="get()" style="display: none;">
+                <input type="number" class="col-3  inp" placeholder="Discount" id="discount" onkeyup="get()">
+                <div class="col-1"></div>
+                <small id="total" class="col-2 " style="font-size: 1.5rem;"></small>
+            </div>
+            <div class="row marbottom">
+                <input type="text" class="col-12   inp marbottom" placeholder="Count" id="count">
+                
+                <div><button class="col-12 btn color " id="create" type="submit">Create</button></div>
+               
+
+            </div>
+            <div class="row marbottom">
+                <input type="text" class="col-12 inp marbottom" placeholder="search" id="search" onkeyup="ssearch()" >
+            </div>
+                <div class="row marbottom">
+                <button class="col-5 btn color marbottom" onclick="searchh(this.id)" id="title">Search by title</button>
+                <div class="col-2"></div>
+                <button class="col-5 btn color marbottom" onclick="searchh(this.id)" id="category">Search by Author</button>
+                <div id="addDelete"></div>
+            </div>
+            
+        </div>
+    </div>
+    <hr>
+  
+    <table >
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>Title</th>
+            <th> Author</th>
+            <th>price</th>
+            <th>discound</th>
+            <th>total</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+            <tbody id="table">
+               
+            </tbody>
+        
+    </table>
+     <script src="main.js"></script>
+</body>
+</html>

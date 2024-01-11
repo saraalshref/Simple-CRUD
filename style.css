@@ -1,0 +1,65 @@
+.inp{
+    border: none;
+    outline-style: none;
+}
+.marbottom{
+    margin-bottom: 20px !important;
+    
+}
+.color{
+    background-color: #0f2234;
+    color: white;
+    
+}
+.color:hover{
+    color: white;
+}
+input{
+    border-radius: 10px;
+    height: 40px;
+    padding: 4px;
+    margin-left: 10px;
+   font-style: italic;
+   background-color: #bbb8b8;
+
+}
+input:hover{
+    transform: scale(1.1);
+}
+
+button:hover{
+    letter-spacing: 2px;
+    background-color: #142e46;
+    
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: hidden;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+body{
+    background-color:#f2f2f2;
+    
+    
+}
+#total::before{
+    content: "total : ";
+
+}
+input::placeholder {
+    color: #999595; 
+    font-style: italic; 
+}
+body{
+    background-image: url("bbb.jpg");
+    color: #0f2234;
+    color: white;
+}
+
+
